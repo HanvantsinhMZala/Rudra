@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "cambria", sans-serif;
+  background-color: #D4E6F1;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #FCF3CF;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li a {
+  margin-right: 15px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  margin-bottom: 5px;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: left 0.4s ease-in-out;
+  }
+
+  .navbar li a {
+    margin-bottom: 15px;
+  }
+
+  .navbar ul.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Hamburger Menu Animation */
+.hamburger span:nth-child(1) {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger span:nth-child(3) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+.nav-links {
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+  display: inline-block; /* Make list items display horizontally */
+  margin-right: 20px; /* Add space between list items */
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Set default color */
+  font-weight: bold; /* Make text bold */
+  transition: color 0.2s ease-in-out; /* Add smooth color transition */
+}
+
+.nav-links a:hover {
+  color: #de3163; /* Change color on hover */
+}
+
+.logo {
+  /* Typography and Color */
+  font-family: "cambria", sans-serif; /* Replace with your preferred font */
+  font-size: 2rem; /* Adjust font size as needed */
+  color: #333; /* Change color to your preference */
+
+  /* Additional Styling Options */
+  text-align: center; /* Center align the text */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add spacing between letters */
+
+  /* Optional: Add a subtle gradient */
+  background-image: linear-gradient(
+    to right,
+    #6495ed 0%,
+    #40e0d0 100%
+  ); /* Adjust gradient colors as desired */
+  padding: 5px 10px; /* Add padding around the text */
+  border-radius: 5px; /* Add rounded corners */
+
+  /* Optional: Add a subtle hover effect */
+  transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+
+  &:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    background-image: linear-gradient(
+      to right,
+      #ffbf00 0%,
+      #ff7f50 100%
+    ); /* Reverse the gradient on hover */
+  }
+}
+
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Repeat the pattern of 1 fractional unit 3 times */
+    gap: 10px; /* Add spacing between grid items */
+    margin: 50px;
+    height: 500px;
+    /* background-color: #6495ed; */
+}
+
+.item{
+    /* No additional styles needed for equal-width layout and gap */
+    font-size: 20px;
+    padding: 25px;
+    /* border: 5px solid red; */
+    border-radius: 5px;
+    background-color: #AF7AC5;
+  }
+
+.item h1
+{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+
+  }
+    
+
+footer.footer {
+  background-color: #CCCCFF;
+  padding: 10px 20px;
+  text-align: center;
+  color: #333;
+  position: fixed; /* Stick the footer to the bottom */
+  bottom: 0; /* Position it at the bottom edge */
+  width: 100%; /* Make it span the full width of the viewport */
+}
