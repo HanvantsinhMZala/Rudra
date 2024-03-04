@@ -27,3 +27,46 @@
     font-size: 18px;
     color: #16A085; /* Same color as h1 */
 }
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+tr, td{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#upcoming-batches {
+    border: 1px solid #ddd; /* Add a light gray border */
+    padding: 15px;
+    margin: 10px; /* Add some margin for spacing */
+    text-align: center; /* Center the content within the div */
+  }
+  
+  #upcoming-batches h2 {
+    margin-bottom: 10px; /* Add space below the heading */
+  }
+  
+  #upcoming-batches ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  #upcoming-batches li {
+    margin-bottom: 5px; /* Add space between list items */
+  }
+  
+  #upcoming-batches a {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none; /* Remove underline from link */
+  }
+  
+  #upcoming-batches a:hover {
+    background-color: #222; /* Change background color on hover */
+  }
+  
