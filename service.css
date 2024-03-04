@@ -1,0 +1,29 @@
+/* Services section */
+.services {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 50px auto;
+}
+
+.left-div,
+.right-div {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-div h1,
+.right-div h1 {
+    margin-bottom: 20px;
+    color: #007bff; /* Primary blue color */
+}
+
+/* Icons */
+.left-div i,
+.right-div i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #16A085; /* Same color as h1 */
+}
